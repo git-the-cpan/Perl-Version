@@ -4,7 +4,7 @@
       "Andy Armstrong <andy@hexten.net>"
    ],
    "dynamic_config" : 1,
-   "generated_by" : "ExtUtils::MakeMaker version 6.66, CPAN::Meta::Converter version 2.132830",
+   "generated_by" : "ExtUtils::MakeMaker version 7.0401, CPAN::Meta::Converter version 2.150001",
    "license" : [
       "perl_5"
    ],
@@ -21,13 +21,12 @@
    },
    "prereqs" : {
       "build" : {
-         "requires" : {
-            "ExtUtils::MakeMaker" : "0"
-         }
+         "requires" : {}
       },
       "configure" : {
          "requires" : {
-            "ExtUtils::MakeMaker" : "0"
+            "ExtUtils::MakeMaker" : "6.64",
+            "File::Spec::Functions" : "0"
          }
       },
       "runtime" : {
@@ -38,10 +37,26 @@
             "Getopt::Long" : "2.34",
             "Pod::Usage" : "1.3",
             "Scalar::Util" : "0",
-            "Test::More" : "0"
+            "perl" : "5.008"
+         }
+      },
+      "test" : {
+         "requires" : {
+            "Test::More" : "0.94"
          }
       }
    },
    "release_status" : "testing",
-   "version" : "1.013_02"
+   "resources" : {
+      "bugtracker" : {
+         "web" : "https://github.com/briandfoy/Perl--Version/issues"
+      },
+      "homepage" : "https://github.com/briandfoy/Perl--Version",
+      "repository" : {
+         "type" : "git",
+         "url" : "https://github.com/briandfoy/Perl--Version.git",
+         "web" : "https://github.com/briandfoy/Perl--Version"
+      }
+   },
+   "version" : "1.013_03"
 }
